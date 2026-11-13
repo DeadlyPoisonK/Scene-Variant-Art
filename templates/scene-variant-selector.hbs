@@ -1,0 +1,30 @@
+<div class="scene-variant-container">
+  <div class="header-search">
+    {{#if levels}}
+    <select class="level-select" aria-label="Nivel">
+      {{#each levels}}
+      <option value="{{this.id}}" {{#if this.selected}}selected{{/if}}>{{this.name}}</option>
+      {{/each}}
+    </select>
+    {{/if}}
+    <input type="text" class="search-filter" placeholder="Buscar variantes de arte..." autofocus />
+  </div>
+
+  <div class="variants-grid">
+    {{#each images}}
+    <div class="image-variant {{#if this.active}}active{{/if}}" data-action="pickVariant" data-path="{{this.path}}" data-name="{{this.name}}" data-tooltip="{{this.name}}">
+      <div class="thumbnail-container">
+        {{#if this.isVideo}}
+          <video src="{{this.path}}" autoplay loop muted></video>
+        {{else}}
+          <img src="{{this.path}}" loading="lazy" />
+        {{/if}}
+      </div>
+      <div class="image-name">{{this.name}}</div>
+    </div>
+    {{else}}
+    <div class="no-variants">No se encontraron imágenes en la carpeta del fondo actual.</div>
+    {{/each}}
+    <div class="no-variants no-matches" hidden>Ninguna variante coincide con la búsqueda.</div>
+  </div>
+</div>

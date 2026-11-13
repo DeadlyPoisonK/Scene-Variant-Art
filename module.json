@@ -1,0 +1,27 @@
+{
+  "id": "scene-variants",
+  "title": "Scene Variant Art",
+  "description": "Permite seleccionar de forma rápida variantes de arte para el fondo de las escenas de una carpeta.",
+  "version": "2.0.0",
+  "authors": [
+    {
+      "name": "Kevin & Antigravity",
+      "url": "https://github.com/DeadlyPoisonK"
+    }
+  ],
+  "url": "https://github.com/DeadlyPoisonK/Scene-Variant-Art",
+  "manifest": "https://github.com/DeadlyPoisonK/Scene-Variant-Art/releases/latest/download/module.json",
+  "download": "https://github.com/DeadlyPoisonK/Scene-Variant-Art/releases/latest/download/module.zip",
+  "bugs": "https://github.com/DeadlyPoisonK/Scene-Variant-Art/issues",
+  "license": "MIT",
+  "compatibility": {
+    "minimum": 13,
+    "verified": "14.369"
+  },
+  "scripts": [
+    "scene-variants.js"
+  ],
+  "styles": [
+    "scene-variants.css"
+  ]
+}
